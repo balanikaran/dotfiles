@@ -45,6 +45,10 @@ brew install --cask spotify
 # install and setup container runtimes
 # install docker
 brew install docker
+# install colima
+brew install colima
+# start colima
+colima start
 # install docker compose v2
 brew install docker-compose
 # creating symlink for docker to find the compose cli plugin
@@ -55,7 +59,10 @@ brew install docker-buildx
 # creating symlink for docker to find the buildx cli plugin
 mkdir -p ~/.docker/cli-plugins
 ln -sfn /opt/homebrew/opt/docker-buildx/bin/docker-buildx ~/.docker/cli-plugins/docker-buildx
-
+# use buildx as default in build
+docker buildx install
+# stop colima
+colima stop
 
 # cleanup
 brew cleanup
