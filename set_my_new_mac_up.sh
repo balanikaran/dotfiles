@@ -42,6 +42,10 @@ brew install --cask discord
 # install spotify
 brew install --cask spotify
 
+# install languages
+# golang
+brew install go
+
 # install and setup container runtimes
 # install docker
 brew install docker

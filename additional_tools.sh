@@ -10,3 +10,6 @@ brew install hashicorp/tap/terraform
 
 # stats app
 brew install stats
+
+# jetbrains goland
+brew install --cask goland
